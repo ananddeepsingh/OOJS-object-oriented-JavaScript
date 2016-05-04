@@ -1,4 +1,5 @@
 /*--------------------------------------------------------------------------
+ * OOJS object oriented JavaScript 
  *
  * Created      : 15/02/2016
  * Modified     : 
@@ -9,10 +10,13 @@
  ---------------------------------------------------------------------------*/
 
 /**
+* This is OOJS, it makes something awesome.
 * It's a self invokated function that runs automatically/immediately.
 *
+* @class OOJS object oriented JavaScript 
 * @constructor
 */
+OOJS = window.OOJS || (function($, window,document,undefined){
 	
 	"use strict";
 
@@ -289,3 +293,4 @@
 
 
 // Initialize app
+OOJS.init();
