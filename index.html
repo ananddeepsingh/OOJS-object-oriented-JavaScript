@@ -1,0 +1,138 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> OOJS object oriented JavaScript </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="static/css/libs/bootstrap.css">
+    <link rel="stylesheet" href="static/css/app.css">
+	
+    <script type="text/javascript"  src="static/js/libs/modernizr-2.8.3.min.js"></script>
+	<script type="text/javascript" src="static/js/libs/d3.js"></script>
+</head>
+<!--[if IE 7 ]><body class="ie ie7 lt-ie8 lt-ie9 lt-ie10 no-mq"><![endif]-->
+<!--[if IE 8 ]><body class="ie ie8 lt-ie9 lt-ie10 no-mq"><![endif]-->
+<!--[if IE 9 ]><body class="ie ie9 lt-ie10"><![endif]-->
+<body>
+    <section class="container-non-responsive main-container top-primary-bar no-padding">
+        <div class="col-lg-5 no-padding-left">
+            <div class="input-group custom-search-form">
+                <input type="text" class="form-control" placeholder="Search by Security, Client or Book">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div><!-- /input-group -->
+        </div>
+        <div class="col-lg-7 no-padding-right">
+            <ul class="nav pull-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pinar P <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/user/preferences"><i class="icon-cog"></i> Preferences</a></li>
+                        <li><a href="/help/support"><i class="icon-envelope"></i> Contact Support</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/auth/logout"><i class="icon-off"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="top-primary-date pull-right">
+                12:14:08 PM, 2/8/2016
+            </div>
+        </div>
+
+    </section>
+
+    <!-- clients section -->
+    <section class="grey-section all-client-section">
+
+        <button class="all-client-btn expandCollapseButton pull-left" data-open="Expand" data-close="Collapse">
+            <span class="button-open-close">Expand</span>
+            <span class="glyphicon glyphicon-triangle-top"></span>
+        </button>
+
+        <div class="clients-list pull-right" id="clientList">
+            <script type="text/javascript">
+                var clients = [
+                { "name": "All Technologies", "hitCount": "28", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "HTML", "hitCount": "10", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "JavaScript", "hitCount": "6", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "Jquery", "hitCount": "2", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "CSS", "hitCount": "1", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "SASS", "hitCount": "1", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "Angular", "hitCount": "1", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "Media Queries", "hitCount": "0", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                { "name": "Designing", "hitCount": "0", "LastTraded": "Toyota 5 2/3 02/05/2017", "Feedback": "Not interested in commodities right now, but can opt for futures" },
+                
+                ];
+
+                d3.select("#clientList").append("ul").selectAll("li")
+                .data(clients)
+                .enter()
+                .append("li")
+                .append("a").attr("class", "clients-list ul li a").text(function (d) { return d.name; })
+                .filter(function (d) { return d.hitCount > 0; })
+                .append("span").attr("class", ".clients-list ul li a span").text(function (d) { return d.hitCount; });
+
+                d3.select("#clientList").selectAll("li")
+                 .data(clients)
+                 .append("div").attr("class", "quick-client-feedback hide")
+                 .append("h6").text(function (d) { return "Last Traded: " + d.LastTraded; });
+
+                d3.select("#clientList").selectAll("li").select("div")
+               .data(clients)
+               .append("h6").text(function (d) { return "\nFeedback: " + d.Feedback; });
+
+            </script>
+        </div>
+    </section>
+
+
+
+    <!-- client details -->
+    <section class="grey-section client-details-wrapper">
+       
+        <div class="row bond-row">
+            <div class="col-lg-5 bond-info ">
+                <h2>Anand Deep Singh</h2>
+
+                <div class="col-lg-10 no-padding">
+                    <textarea class="add-client-description hide"></textarea>
+                    <div class="client-description-wrapper pull-left no-padding">
+                        <span class="client-description">I love to work with updated technologies :) Feel free to email me at singh.ananddeep@gmail.com</span>
+                    </div>
+                </div>
+                <button class="pull-left edit-button glyphicon glyphicon-edit" title="Edit Button"></button>
+            </div>
+
+            <div class="col-lg-3 text-center">
+                <img src="static/images/85mm.jpg" alt="" />
+            </div>
+
+            <div class="col-lg-4">
+                <img src="static/images/hit-ratio.jpg" alt="" />
+            </div>
+        </div>
+        <div class="row recommend">
+            <div class="col-lg-12 bond-info">
+                <h2 class="col-lg-12 no-padding-left pull-left">Love To Work With - HTML, CSS2/3, Sass, JavaScript, Jquery</h2>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- JavaScript -->
+    <script src="static/js/libs/jquery.js"></script>
+    <script src="static/js/libs/bootstrap.js"></script>
+    <script src="static/js/app__oojs.js"></script>
+
+   
+  
+    <!-- tile view end -->
+</body>
+</html>

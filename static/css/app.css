@@ -1,0 +1,1346 @@
+/**
+    * app.css
+    * The styles in this file represent all basic styles for the OOJS Example.
+    * It includes a reset, the basic grid and some default components.
+    * 
+    * @project   OOJS Example
+    * @date      2016-04-04
+    * @author    Anand Deep Singh, <singh.ananddeep@gmail.com>
+    * @licensor  Learning
+    * @site      Learning
+    *
+    * @dependency index.html
+    *
+*/
+
+body
+{
+    color: #fff;
+    background: rgb(0, 0, 0);
+    padding: 8px;
+}
+
+
+.container-non-responsive
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
+}
+
+/**********************
+/* common class [start]
+***********************/
+button:focus
+{
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    padding: 0;
+    margin: 0;
+}
+
+.light-green
+{
+    background: #12596a;
+    color: #fff;
+    padding: 8px;
+    margin: 14px 12px;
+    border-radius: 4px;
+}
+
+.light-red
+{
+    background: #8d5b4f;
+    color: #fff;
+    padding: 8px;
+    margin: 14px 12px;
+    border-radius: 4px;
+}
+
+.bond-tile-view h3
+{
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.bond-tile-view p
+{
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.bond-tile-view li
+{
+    cursor: pointer;
+}
+
+.bond-details
+{
+    margin-bottom: 10px;
+}
+
+.last-updated
+{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+    .last-updated span
+    {
+        opacity: 0.5;
+    }
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.no-padding
+{
+    padding: 0 !important;
+}
+
+.no-padding-left
+{
+    padding-left: 0 !important;
+}
+
+.no-padding-right
+{
+    padding-right: 0 !important;
+}
+
+.no-padding-top
+{
+    padding-top: 0 !important;
+}
+
+.no-padding-bottom
+{
+    padding-right: 0 !important;
+}
+
+.no-margin
+{
+    margin: 0 !important;
+}
+
+.no-margin-left
+{
+    margin-left: 0 !important;
+}
+
+.no-margin-right
+{
+    margin-right: 0 !important;
+}
+
+.no-margin-top
+{
+    margin-top: 0 !important;
+}
+
+.no-margin-bottom
+{
+    margin-right: 0 !important;
+}
+
+.light-content
+{
+    opacity: 0.6;
+}
+
+.disabled
+{
+    opacity: 0.6;
+    cursor: text;
+}
+
+.custom-selectBox
+{
+    position: relative;
+}
+
+    .custom-selectBox ul
+    {
+        margin-top: -1px;
+        width: 120px;
+        position: absolute;
+        top: 30px;
+        text-align: left;
+        right: 0;
+        z-index: 3;
+        display: none;
+    }
+
+    .custom-selectBox .drop-option
+    {
+        background: #10141c;
+        border-radius: 4px;
+        margin-bottom: 1px;
+        padding: 3px 8px;
+        cursor: pointer;
+    }
+
+        .custom-selectBox .drop-option:hover
+        {
+            color: #f6f6f6;
+            background: #4096ee;
+        }
+
+.custom-selectBox-control
+{
+    min-width: 100px;
+}
+
+    .custom-selectBox-control .glyphicon
+    {
+        margin-top: 4px;
+    }
+
+.news-and-clientFlow .custom-selectBox ul,
+.feedback-for-dropdown ul
+{
+    right: 0;
+    left: initial;
+}
+
+.yellow
+{
+    color: #ffff00;
+}
+
+.edit-button {
+    background: #000;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.add-client-description {
+    background-color: rgb(28, 36, 50);
+    width: 400px;
+    height: 44px;
+    border: none;
+}
+
+.bg-highlight
+{
+    background: #1c6071;
+}
+
+.primary-button
+{
+    width: 120px;
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.client-10
+{
+    width: 230px;
+    float: left;
+}
+
+.client-09
+{
+    width: 210px;
+    float: left;
+}
+
+.client-08
+{
+    width: 200px;
+    float: left;
+}
+
+.client-07
+{
+    width: 180px;
+    float: left;
+}
+
+.client-06
+{
+    width: 160px;
+    float: left;
+}
+
+.client-05
+{
+    width: 150px;
+    float: left;
+}
+
+.client-04
+{
+    width: 140px;
+    float: left;
+}
+
+.client-03
+{
+    width: 130px;
+    float: left;
+}
+
+.client-02
+{
+    width: 120px;
+    float: left;
+}
+
+.client-01
+{
+    width: 100px;
+    float: left;
+}
+/**********************
+/* common class [end]
+***********************/
+
+/* Sunil Code [start] */
+
+	.Buy {
+		fill: teal;
+	}
+
+	.spanheading2 {
+		font-size: 11px;
+		opacity: 0.9;
+		margin-top: 2px;
+	}
+
+	.Sell {
+		fill: #795548;
+	}
+
+	.tiles-list {
+		width: 100%;
+	}
+
+	.tiles-list ul li {
+		display: inline-block;
+		position: relative;
+		margin: 0 25px 16px 0;
+	}
+
+	.tiles-list ul li div {
+		position: relative;
+		display: inline-block;
+		background: #044e6c;
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px 18px;
+	}
+
+/* Sunil Code [end] */
+
+
+.container-non-responsive
+{
+    /* Margin/padding copied from Bootstrap */
+    margin-left: auto;
+    margin-right: auto;
+    /* Set width to your desired site width */
+    width: 1330px;
+}
+
+.dropdown-toggle
+{
+    color: #fff !important;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.nav > li > a:hover,
+.nav > li > a:focus
+{
+    background: transparent !important;
+}
+
+.dropdown-menu
+{
+    left: auto !important;
+    right: 0;
+}
+
+.top-primary-bar
+{
+    margin-bottom: 8px;
+}
+
+.top-primary-date
+{
+    color: #999;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.main-container
+{
+    float: left;
+    width: 100%;
+}
+
+.grey-section
+{
+    background: #253042;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.grey-section-50
+{
+    width: 40%;
+    background: #253042;
+    margin-bottom: 20px;
+    width: 49%;
+    padding: 15px;
+}
+
+
+
+.description-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #253042;
+    width: 100%;
+    z-index: 9;
+    padding: 26px 16px;
+    height: 603px;
+}
+
+.feedback-timeLine
+{
+    margin-top: 23px;
+	font-size: 16px;
+}
+
+.feedback-for
+{
+    opacity: 0.6;
+}
+
+
+.expandCollapseButton,
+.custom-selectBox-control
+{
+    color: #fff;
+    opacity: 0.6;
+    background-color: #10141c;
+    border-radius: 10px;
+    border: none;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.data-grid-icon
+{
+    margin-left: 10px;
+}
+
+.data-icon
+{
+    width: auto;
+    border: none;
+    background: transparent;
+    margin: 3px 2px 0;
+    padding: 0;
+}
+
+.custom-selectBox-control .glyphicon
+{
+    font-size: 10px;
+}
+
+.clients-list
+{
+    width: 90%;
+}
+
+    .clients-list ul li
+    {
+        display: inline-block;
+        position: relative;
+    }
+
+        .clients-list ul li a
+        {
+            position: relative;
+            display: inline-block;
+            background: #044e6c;
+            color: #FFF;
+            opacity:0.8;
+            cursor:pointer;
+            border-radius: 2px;
+            padding: 10px 18px;
+            margin: 0 15px 15px 0;
+            width:145px;
+            font-size:13px;
+            text-align:center;
+            border-style:solid;
+            border-width:2px;
+            border-color:#044e6c;
+        }
+
+            .clients-list ul li a:hover
+            {
+                color: #FFF;
+                opacity:1.0;
+                border-style:solid;
+                border-width:2px;
+                border-color:#01e7f2;
+            }
+
+            .clients-list ul li a span
+            {
+                position: absolute;
+                top: -9px;
+                right: -9px;
+                border-radius: 12px;
+                background: #fff;
+                width: 24px;
+                color: #000;
+                padding: 2px;
+                text-align: center;
+            }
+
+.quick-client-feedback
+{
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    z-index: 2;
+    width: 200px;
+    background: #fff;
+    color: #000;
+    font-size: 10px;
+    padding: 8px;
+    -webkit-box-shadow: 6px 10px 19px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 10px 19px -6px rgba(0,0,0,0.75);
+    box-shadow: 6px 10px 19px -6px rgba(0,0,0,0.75);
+}
+
+.close-button a
+{
+    color: #fff;
+}
+
+    .close-button a:hover
+    {
+        color: #01e7f2;
+    }
+
+.quick-client-feedback h6
+{
+    font-size: 11px;
+    margin: 0 0 5px 0;
+}
+
+/****************************
+/* Second Row 
+/* Bond Section [start]
+*****************************/
+.bond-row
+{
+    margin-bottom: 19px;
+}
+
+.bond-info h2
+{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.bond-info p
+{
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.bond-info a
+{
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+    .bond-info a:hover
+    {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.6;
+        text-decoration: underline;
+    }
+
+
+.bond-table-view .BRHeader
+{
+    font-family: 'Arial Regular', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #253042;
+}
+
+.BRHeader > span
+{
+    padding-left: 10px;
+}
+
+/* Css BondRecommendation Grid Start*/
+.BRGrdContainer
+{
+    color: #FFFFFF;
+    font-family: 'Arial Regular', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    width: 100%;
+    max-height: 325px;
+    overflow: auto;
+    background-color: #141923;
+}
+
+.BRGrdTable
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #253042;
+}
+
+.BRGrdThead
+{
+    display: table-header-group;
+    background-color: #141923;
+}
+
+.BRGrdTBody
+{
+    display: table-row-group;
+}
+
+.BRGrdTH
+{
+    display: table-row;
+    font-weight: 400;
+    text-align: left;
+}
+
+.BRGrdTR
+{
+    display: table-row;
+    background-color: #253042;
+}
+
+.BRGrdTd
+{
+    display: table-cell;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: #262626;
+    border-bottom-width: 1px;
+}
+
+.BRGrdTH > .BRGrdTd
+{
+    height: 30px;
+    line-height: 30px;
+}
+
+.BRGrdTd > span
+{
+    opacity: 0.8;
+}
+
+/* Second Row Bond Section [end]*/
+
+
+
+/* client-flow-history [start]*/
+
+.client-flow-history h2
+{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+/* client-flow-history [end]*/
+
+
+/* News Feed [start]*/
+.news-row
+{
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+.highlighted
+{
+    background: #12596a;
+}
+
+/* News Feed [end]*/
+
+
+.feedback-row
+{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+
+
+/* ================ The Timeline ================ */
+
+.timeline
+{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+    .timeline:before
+    {
+        position: absolute;
+        left: 36%;
+        top: 0;
+        content: ' ';
+        display: block;
+        width: 6px;
+        height: 100%;
+        margin-left: -3px;
+        background: rgb(80,80,80);
+        background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+        background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        z-index: 5;
+    }
+
+    .timeline li
+    {
+        padding: 1em 0;
+    }
+
+        .timeline li:after
+        {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+.direction-l
+{
+    position: relative;
+    float: left;
+    text-align: right;
+}
+
+.direction-r
+{
+    position: relative;
+    float: right;
+}
+
+.flag-wrapper
+{
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.flag
+{
+    position: relative;
+    display: inline;
+    color: #fff;
+    padding: 0 10px 6px;
+    border-radius: 5px;
+    width: 116px;
+    float: left;
+    text-align: left;
+    font-size: 13px;
+}
+
+    .flag .feedback-client
+    {
+        display: block;
+    }
+
+    .flag .time, .flag .date
+    {
+        opacity: 0.5;
+    }
+
+
+
+.direction-l .flag:before,
+.direction-r .flag:before
+{
+    position: absolute;
+    top: 50%;
+    right: -33px;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-top: -10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(255,80,80);
+    z-index: 10;
+}
+
+.desc
+{
+    font-size: 0.77777em;
+    line-height: 1.5em;
+    width: 80%;
+    text-align: left;
+}
+
+.direction-r .desc
+{
+    margin: 0 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px)
+{
+
+    .timeline
+    {
+        width: 100%;
+        padding: 4em 0 1em 0;
+    }
+
+        .timeline li
+        {
+            padding: 2em 0;
+        }
+
+    .direction-l,
+    .direction-r
+    {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .flag
+    {
+        background: rgb(255,255,255);
+        z-index: 15;
+    }
+
+    .direction-l .flag:before,
+    .direction-r .flag:before
+    {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        content: ' ';
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-left: -9px;
+        background: #fff;
+        border-radius: 10px;
+        border: 4px solid rgb(255,80,80);
+        z-index: 10;
+    }
+
+    .direction-l .flag:after,
+    .direction-r .flag:after
+    {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        height: 0;
+        width: 0;
+        margin-left: -8px;
+        border: solid transparent;
+        border-bottom-color: rgb(255,255,255);
+        border-width: 8px;
+        pointer-events: none;
+    }
+
+    .desc
+    {
+        position: relative;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        background: rgb(245,245,245);
+        -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        z-index: 15;
+    }
+
+    .direction-l .desc,
+    .direction-r .desc
+    {
+        position: relative;
+        margin: 1em 1em 0 1em;
+        padding: 1em;
+        z-index: 15;
+    }
+}
+
+/* Timeline codding end*/
+
+
+/* Client detail [start]*/
+
+.client-popup-details h5
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.client-popup-details .last-updated-time
+{
+    display: inline-block;
+    margin-left: 20px;
+    background: #044e6c;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.bond-detailed-info
+{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+    .bond-detailed-info .bond-name,
+    .bond-detailed-info .bond-type
+    {
+        padding-right: 10px;
+    }
+
+.bond-issue-strip
+{
+    font-size: 11px;
+    padding: 5px !important;
+}
+
+    .bond-issue-strip small
+    {
+        font-size: 11px;
+    }
+
+.bond-holding-details
+{
+    margin-bottom: 20px;
+}
+
+.bond-holding
+{
+    font-size: 11px;
+    line-height: 22px;
+    border: 1px solid #dedede;
+    margin-left: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bond-table
+{
+    margin-bottom: 10px;
+}
+
+.bond-table-row
+{
+    display: table;
+    margin-bottom: 8px;
+}
+
+.bond-cell
+{
+    display: inline-block;
+}
+
+    .bond-cell span,
+    .bond-cell span small
+    {
+        display: inline-block;
+        font-size: 11px;
+    }
+
+.button-row
+{
+    float: left;
+}
+
+.feedback-section
+{
+    margin-top: 60px;
+    float: left;
+}
+
+.feedback
+{
+    width: 330px;
+    height: 50px;
+	color: #000;
+}
+
+.feedback-button
+{
+    margin-left: 20px;
+}
+
+.client-feedback-panel
+{
+    margin-top: 20px;
+}
+
+    .client-feedback-panel .flag:before{
+        right: -76px;
+		background: url("../images/correct-icon.gif") no-repeat 0 0;
+    }
+/* Client detail [end]*/
+
+
+.recommend h2 span
+{
+    font-size: 12px;
+}
+
+
+
+
+/* All Client Section [start]*/
+
+.all-client-section{
+    height: 64px;
+    overflow: hidden;
+}
+/* All Client Section [end]*/
+
+
+
+/* table style */
+
+.company-holdings-table-header {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-left: 0;
+    margin-right: 0;
+	background-color: #253042;
+}
+
+.bond-header {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 80px;
+	line-height: 80px;
+}
+
+.bond-header span {
+	padding-left: 10px;
+}
+
+/* Css For Div Table*/
+.divtable {
+	display: table;
+	width: 100%;
+	background-color: #253042;
+}
+
+.divtable-thead {
+	display: table-header-group;
+	background-color: #141923;
+	display: table-row;
+	font-weight: 400;
+	text-align: left;
+}
+
+.divtable-tbody {
+	display: table-row-group;
+}
+
+.divtable-tr {
+	display: table-row;
+	background-color: #253042;
+}
+
+.divtable-td {
+	display: table-cell;
+	padding-left: 1%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom-style: solid;
+	border-bottom-color: #262626;
+	border-bottom-width: 1px;
+}
+
+.divtable-thead .divtable-td {
+	height: 30px;
+	line-height: 30px;
+}
+
+.divtable-td span {
+	opacity: 0.8;
+}
+/* Css for DivTable End*/
+
+
+/* Css BondRecommendation Grid Start*/
+.bond-table {
+	color: #FFFFFF;
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	width: 100%;
+	max-height: 325px;
+	overflow: auto;
+}
+
+.bond_table .divtable .divtable-thead .divtable-td {
+	width: 14%;
+}
+
+.bond-table-header {
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	background:black;
+	color: #FFFFFF;
+	opacity: 0.8;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.bond-security, .bond-volumeprice, .bond-direction {
+	width: 20%;
+	padding-left: 1%;
+	line-height: 30px;
+	float: left;
+}
+
+.bond-currency, .bond-bid, .bond-ask, .bond-newissue {
+	width: 10%;
+	padding-left: 1%;
+	float: left;
+	line-height: 30px;
+}
+
+/* Css BondRecommendation Grid end*/
+
+
+/* Css Company Holdings Grid Start*/
+.company-holdings-table {
+	color: #FFFFFF;
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 11px;
+	width: 100%;
+	max-height: 325px;
+	overflow: auto;
+	background-color: #141923;
+}
+
+	.company-holdings-table .divtable-td {
+		border-bottom-style: none;
+	}
+
+	.company-holdings-table .divtable-thead .divtable-td {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.company-holdings-table .divtable-tbody .divtable-td {
+		height: 25px;
+		line-height: 25px;
+	}
+
+.company-holdings-companyname {
+	width: 15%;
+	padding-left: 1%;
+	line-height: 30px;
+	float: left;
+}
+
+.company-holdings-location,
+.company-holdings-positionsheld, .company-holdings-recentchanges,
+.company-holdings-positiondate {
+	width: 10%;
+	padding-left: 1%;
+	line-height: 30px;
+	float: left;
+}
+
+.company-holdings-portfolio, .company-holdings-reportedf1,
+.company-holdings-flPortfolio {
+	width: 15%;
+	padding-left: 1%;
+	line-height: 30px;
+	float: left;
+}
+
+
+.bond-security, .bond-volumeprice, .bond-direction {
+	width: 20%;
+	padding-left: 1%;
+	line-height: 30px;
+	float: left;
+}
+
+.bond-currency, .bond-bid, .bond-ask, .bond-newissue {
+	width: 10%;
+	padding-left: 1%;
+	float: left;
+	line-height: 30px;
+}
+
+/* Css Company Holdings Grid End*/
+
+
+/* Css Holdings Grid Start*/
+.holdings-table {
+	color: #FFFFFF;
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 11px;
+	width: 100%;
+	max-height: 325px;
+	overflow: auto;
+	background-color: #141923;
+}
+
+	.holdings-table .divtable-td {
+		border-bottom-style: none;
+	}
+
+	.holdings-table .divtable-thead .divtable-td {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.holdings-table .divtable-tbody .divtable-td {
+		height: 25px;
+		line-height: 25px;
+	}
+
+.holdings-table-header {
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 11px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	margin-left: 0;
+	margin-right: 0;
+	word-wrap: break-word;
+}
+
+.holdings-fundname, 
+.holdings-positions, 
+.holdings-recentchanges, 
+.holdings-positiondate, 
+.holdings-reportedfl, 
+.holdings-flportfolio,
+.holdings-portfolio {
+	width: 10%;
+	padding-left: 1%;
+	float: left;
+	word-wrap: break-word;
+}
+
+.holdings-fundtype, .holdings-contact {
+	width: 10%;
+	padding-left: 1%;
+	float: left;
+	word-wrap: break-word;
+}
+
+
+
+/* Css Holdings Grid End*/
+
+
+/*Sleek ScrollBar Start*/
+::-webkit-scrollbar {
+	margin: 0;
+	height: 8px;
+	width: 8px;
+	background-color: black;
+	display: block !important;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
+
+::-webkit-scrollbar-track {
+	margin: 0;
+	height: 8px;
+	width: 8px;
+	background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+	margin: 0;
+	height: 8px;
+	width: 8px;
+	background-color: #8a8a8a;
+	opacity: 0.5;
+	border-radius: 5px;
+}
+/*Sleek ScrollBar End*/
+
+.company-level-holdings,
+.company-level-holdings-2 { position: absolute; top: 0; left: 0; background: #253042; z-index: 99; width: 100%; }
+.company-holdings-companyname a { color: #fff;}
+.company-holdings-companyname a:hover { text-decoration: underline;}
+.company-holdings-table span{ cursor: pointer;}
+
+
